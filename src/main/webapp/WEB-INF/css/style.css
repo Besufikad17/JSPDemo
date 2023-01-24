@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.primary {
+  background-color: black;
+  color: white;
+  margin-right: 6px;
+}
+
+.primary:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  border-width: 1px;
+}
+
+.text {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  box-sizing: border-box;
+}
+
+.parent {
+  width: auto;
+  height: 50%;
+  overflow: hidden;
+  padding: 20px 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  float: left;
+  margin-left: 10px;
+}
+
+.links {
+  float: right;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 5px;
+}
+
+.logo img {
+  width: 46px;
+  height: 46px;
+}
+
+.links a img {
+  width: 46px;
+  height: 46px;
+}
