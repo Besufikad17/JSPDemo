@@ -1,12 +1,12 @@
-<%@page import="bean.SignupDao"%>
+<%@page import="controllers.SignupController"%>
 
 
-<jsp:useBean id="obj" class="bean.SignupBean" />
+<jsp:useBean id="obj" class="models.Signup" />
 <jsp:setProperty name="obj" property="*" />
 
 <%
 
-   boolean status=SignupDao.signup(obj);
+   boolean status= SignupController.signup(obj);
 
    if(!status){
       %><jsp:include page="index.jsp"></jsp:include><%

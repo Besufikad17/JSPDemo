@@ -1,12 +1,12 @@
-<%@page import="bean.LoginDao"%>
+<%@page import="controllers.LoginController"%>
 
 
-<jsp:useBean id="obj" class="bean.LoginBean"/>
+<jsp:useBean id="obj" class="models.Login"/>
 <jsp:setProperty name="obj" property="*" />
 
 <%
 
-   boolean status=LoginDao.validate(obj);
+   boolean status= LoginController.validate(obj);
 
    if(!status){
       response.sendRedirect("index.jsp");
